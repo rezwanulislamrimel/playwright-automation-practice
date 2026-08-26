@@ -1,0 +1,23 @@
+{
+  "name": "playwriteautomation",
+  "version": "1.0.0",
+  "description": "\"# playwright-automation-practice\" \r \"# playwright-automation-practice\"",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rezwanulislamrimel/playwright-automation-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rezwanulislamrimel/playwright-automation-practice/issues"
+  },
+  "homepage": "https://github.com/rezwanulislamrimel/playwright-automation-practice#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.3.0"
+  }
+}
