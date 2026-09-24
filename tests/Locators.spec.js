@@ -5,21 +5,20 @@ test('Locators', async ({ page }) => {
     await page.goto('https://www.demoblaze.com/index.html');
 
     // Login button
-    await page.click('id=login2');
+    await page.click('#login2');
 
     // Username
     await page.fill('#loginusername', 'Rimel');
 
     // Password
-    await page.fill("input[id='loginpassword']", 'Test@123');
+    await page.fill('#loginpassword', 'Test@123');
 
-    // Login button
+    // Login
     await page.click('button[onclick="logIn()"]');
 
-    // Logout link
-    const logOutLink = page.locator('a#logout2');
-
-    await expect(logOutLink).toBeVisible();
+    // Verify login was successful
+    const logOutLink = page.locator('#logout2');
+    await expect(logOutLink).toBeVisible({ timeout: 15000 });
 
     await page.close();
 });
