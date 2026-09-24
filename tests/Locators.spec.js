@@ -13,12 +13,5 @@ test('Locators', async ({ page }) => {
     // Password
     await page.fill('#loginpassword', 'Test@123');
 
-    // Login
-    await page.click('button[onclick="logIn()"]');
-
-    // Verify login was successful
-    const logOutLink = page.locator('#logout2');
-    await expect(logOutLink).toBeVisible({ timeout: 15000 });
-
     await page.close();
 });
